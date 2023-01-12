@@ -15,7 +15,7 @@ def start(m, res=False):
 
 @bot.message_handler(content_types=["text"])
 def handle_text(message):
-    s = te.term_extract(message.text)
+    s = te.all_sum(message.text)
     bot.send_message(message.chat.id, s)
 
 
